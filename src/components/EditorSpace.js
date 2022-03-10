@@ -6,6 +6,14 @@ import { javascript } from '@codemirror/lang-javascript'
 import { cpp } from '@codemirror/lang-cpp'
 import { java } from '@codemirror/lang-java'
 import { python } from '@codemirror/lang-python'
+import {materialLight} from '@ddietr/codemirror-themes/theme/material-light'
+import {materialDark} from '@ddietr/codemirror-themes/theme/material-dark'
+import {solarizedLight} from '@ddietr/codemirror-themes/theme/solarized-light'
+import {solarizedDark} from '@ddietr/codemirror-themes/theme/solarized-dark'
+import {dracula} from '@ddietr/codemirror-themes/theme/dracula'
+import {githubLight} from '@ddietr/codemirror-themes/theme/github-light'
+import {githubDark} from '@ddietr/codemirror-themes/theme/github-dark'
+import {aura} from '@ddietr/codemirror-themes/theme/aura'
 
 
 const langSupport = (lang) => {
@@ -22,6 +30,26 @@ const langSupport = (lang) => {
     }
 }
 
+const themeSupport = (theme) => {
+    switch(theme){
+        case 'materialLight':
+            return materialLight
+        case 'materialDark':
+            return materialDark
+        case 'solarizedLight':
+            return solarizedLight
+        case 'solarizedDark':
+            return solarizedDark
+        case 'dracula':
+            return dracula
+        case 'githubLight':
+            return githubLight
+        case 'githubDark':
+            return githubDark
+        case 'Aura':
+            return aura
+    }
+}
 
 const EditorSpace = (props) => {
     
@@ -29,7 +57,7 @@ const EditorSpace = (props) => {
 
     return (
         <div>
-            <CodeMirror height="200px" value={code} onChange={(value) => setCode(value)} extensions={langSupport(props.lang)}/>
+            <CodeMirror height="200px" value={code} onChange={(value) => setCode(value)} extensions={langSupport(props.lang)} theme={themeSupport(props.theme)}/>
             <button onClick={() => sendCode(code, props.lang)}>Compile</button>
         </div>
     )
@@ -39,7 +67,8 @@ const EditorSpace = (props) => {
 
 const mapStatetoProps = (state) => {
     return {
-        lang: state.lang
+        lang: state.lang,
+        theme: state.theme
     }
 }
 
