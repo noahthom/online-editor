@@ -1,7 +1,6 @@
 const reducerDefaultState = {
     output: '',
     lang: 'nodejs',
-    ver: '4',
     theme: 'materialLight'
 }
 
@@ -15,8 +14,7 @@ const reducer = (state = reducerDefaultState, action) => {
         case 'SET_LANG':
             return {
                 ...state,
-                lang: action.lang,
-                ver: action.ver
+                lang: action.lang
             }
         case 'SET_THEME':
             return {
@@ -29,3 +27,4 @@ const reducer = (state = reducerDefaultState, action) => {
 }
 
 export default reducer
+

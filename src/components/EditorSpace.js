@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import CodeMirror from '@uiw/react-codemirror'
-import sendCode from '../request/jdoodle'
+import sendCode from '../util/jdoodle'
 
 const EditorSpace = (props) => {
     

@@ -5,10 +5,9 @@ export const setOutput = (output = '') => {
     }
 }
 
-export const setLang = (lang = 'nodejs', ver = '4') => ({
+export const setLang = (lang = 'nodejs') => ({
     type: 'SET_LANG',
-    lang,
-    ver
+    lang
 })
 
 export const setTheme = (theme = 'materialLight') => ({
