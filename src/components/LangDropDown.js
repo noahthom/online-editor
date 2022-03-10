@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { connect } from "react-redux";
 import Select from "react-select";
 import { setLang } from "../redux/actions";
 import store from "../app";
@@ -18,7 +17,7 @@ const LangDropDown = () => {
 
     return (
         <div>
-            <Select defaultValue = {options[1]} value={selectedOption} onChange={(value) => {
+            <Select value={selectedOption} onChange={(value) => {
                 setSelectedOption(value)
                 store.dispatch(setLang(value.value))
             }} options={options} />
