@@ -5,7 +5,7 @@ const OutputArea = (props) => {
 
     return (
         <div>
-            <textarea className="w-100 h-100" rows="31" value={props.output} disabled />
+            <textarea className="w-100 h-100 bg-white" rows="31" value={props.output} disabled />
         </div>
     )
 

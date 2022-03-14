@@ -8,13 +8,15 @@ const OnlineEditor = () => {
 
     return (
         <div>
-            <h1 className="display-1 text-center">
-                BitPad
-                <small className="text-muted"> a coding editor</small>
-            </h1>
-
-
             <div className="container">
+                <h1 className="mt-0 mb-sm-5 header display-1 text-left p-lg-5 fw-bolder">
+                    BitPad
+                    <small className="text-muted fw-lighter"> a coding editor</small>
+                </h1>
+            </div>
+
+
+            <div className="container mb-sm-5">
                 <div>
                     <div>
                         <LangDropDown />
