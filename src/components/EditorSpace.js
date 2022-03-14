@@ -57,8 +57,8 @@ const EditorSpace = (props) => {
 
     return (
         <div>
-            <CodeMirror height="200px" value={code} onChange={(value) => setCode(value)} extensions={langSupport(props.lang)} theme={themeSupport(props.theme)}/>
-            <button onClick={() => sendCode(code, props.lang)}>Compile</button>
+            <CodeMirror height="600px" value={code} onChange={(value) => setCode(value)} extensions={langSupport(props.lang)} theme={themeSupport(props.theme)}/>
+            <button className="btn btn-primary btn-lg" onClick={() => sendCode(code, props.lang)}>Compile</button>
         </div>
     )
 

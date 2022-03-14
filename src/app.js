@@ -4,6 +4,9 @@ import OnlineEditor from './components/OnlineEditor'
 import reducer from './redux/reducer'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
+import $ from 'jquery'
+import Popper from 'popper.js'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/styles.scss'
 import 'normalize.css/normalize.css'
 
@@ -11,7 +14,7 @@ const store = createStore(reducer,  window.__REDUX_DEVTOOLS_EXTENSION__ && windo
 
 const jsx = (
     <Provider store={store}>
-        <OnlineEditor />
+        <OnlineEditor/>
     </Provider>
 )
 

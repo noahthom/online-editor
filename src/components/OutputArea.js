@@ -5,7 +5,7 @@ const OutputArea = (props) => {
 
     return (
         <div>
-            <textarea value={props.output} readOnly />
+            <textarea className="w-100 h-100" rows="31" value={props.output} disabled />
         </div>
     )
 
