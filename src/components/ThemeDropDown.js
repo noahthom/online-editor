@@ -17,7 +17,7 @@ const options = [
 
 const ThemeDropDown = () => {
 
-    const [selectedOption, setSelectedOption] = useState(options[0])
+    const [selectedOption, setSelectedOption] = useState(options[1])
 
     return (
         <div>

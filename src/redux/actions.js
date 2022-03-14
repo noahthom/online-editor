@@ -10,8 +10,10 @@ export const setLang = (lang = 'nodejs') => ({
     lang
 })
 
-export const setTheme = (theme = 'materialLight') => ({
+export const setTheme = (theme = 'materialDark') => ({
     type: 'SET_THEME',
     theme
 })
+
+
 

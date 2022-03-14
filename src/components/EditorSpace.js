@@ -51,9 +51,12 @@ const themeSupport = (theme) => {
     }
 }
 
+
+
+
 const EditorSpace = (props) => {
     
-    const [code, setCode] = useState('')
+    const [code, setCode] = useState('// Welcome to BitPad!')
 
     return (
         <div>
@@ -68,7 +71,7 @@ const EditorSpace = (props) => {
 const mapStatetoProps = (state) => {
     return {
         lang: state.lang,
-        theme: state.theme
+        theme: state.theme,
     }
 }
 

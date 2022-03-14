@@ -1,7 +1,7 @@
 const reducerDefaultState = {
     output: '',
     lang: 'nodejs',
-    theme: 'materialLight'
+    theme: 'materialDark',
 }
 
 const reducer = (state = reducerDefaultState, action) => {

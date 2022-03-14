@@ -9,7 +9,7 @@ const OnlineEditor = () => {
     return (
         <div>
             <div className="container">
-                <h1 className="mt-0 mb-sm-5 header display-1 text-left p-lg-5 fw-bolder">
+                <h1 className="mt-0 mb-sm-5 header display-1 text-left p-lg-4 fw-bolder">
                     BitPad
                     <small className="text-muted fw-lighter"> a coding editor</small>
                 </h1>
