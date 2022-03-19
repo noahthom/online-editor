@@ -38,6 +38,18 @@ const OnlineEditor = () => {
                     </div>
                 </div>
             </div>
+
+            <footer className="footer m-5">
+                <div className="container">
+                    <span className="text-muted">
+                        Created by Noah. Contact me at: <a href="mailto:noahrozario@outlook.com">noahrozario@outlook.com</a>
+                    </span>
+                    <div>
+                        <a href="https://github.com/noahthom/online-editor" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    
+                </div>
+            </footer>
         </div>
     )
 
